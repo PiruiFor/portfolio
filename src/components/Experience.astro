@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Diciembre 2023 / Febrero 2024",
+    title: "Técnico Instalador",
+    company: "Payway",
+    description:
+      "Mi tarea como técnico instalador de Payway, era encargarme de tareas de instalación y distribución de terminales en diversas ubicaciones."
+  },
+  {
+    date: "Septiembre 2023",
+    title: "Pasantía en Empresa Local",
+    company: "Refsa Hidrocarburos",
+    description:
+      "Encargado del desarrollo y mantenimiento de la plataforma, sus componentes y utilidades para una aplicación específica. Durante el período de pruebas, adquirí una experiencia muy beneficiosa.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

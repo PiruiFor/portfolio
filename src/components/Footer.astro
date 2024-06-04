@@ -1,0 +1,49 @@
+---
+const currentYear = new Date().getFullYear()
+---
+
+<footer class="container mx-auto px-2 lg:px-28 2xl:px-52 mt-14 mb-8">
+
+<div class="rounded-lg border-dark-100 dark:border-dark-700 shadow dark:shadow-dark-700 mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between ">
+    <span class="text-sm sm:text-center text-zinc-800/90"
+    style="color: lime;"
+      >© {currentYear}
+      <a href="https://linkedin.com/in/nahuel-paniagua-2a272925ahttps://midu.dev/" class="hover:underline">Nahuel Paniagua</a>.
+    </span>
+    <ul
+      class="flex flex-wrap items-center mt-3 text-sm font-medium sm:mt-0"
+    >
+      <li>
+        <a href="/#sobre-mi" class="hover:underline me-4 md:me-6"  style="color: lime;">Sobre mí</a>
+      </li>
+      <li>
+        <a href="/#proyectos" class="hover:underline me-4 md:me-6"  style="color: lime;">Proyectos</a>
+      </li>
+      <li>
+        <a id="contacto" href="mailto:nahu.1999@outlook.com" class="hover:underline"  style="color: lime;">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<div class="mt-1 flex justify-center opacity-70">
+  <small class="text-dark-700 dark:text-dark-200 text-center font-bold">
+    Creado con <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="underline font-bold text-blue-800">Astro</a>
+  </small>
+</div>
+<div class="mt-2 flex justify-center opacity-70">
+  <small class="text-dark-700 dark:text-dark-200 text-center font-bold">
+    Inspirado en <a href="https://porfolio.dev" target="_blank" rel="noopener noreferrer" class="underline font-bold text-blue-800">porfolio.dev</a>
+    de midudev
+  </small>
+</div>
+
+<style>
+footer {
+    border: 1px solid;
+    border-radius: 10px;
+    max-width: 1000px;
+    color: rgba(79, 85, 104, 0.733);
+}
+
+</style>

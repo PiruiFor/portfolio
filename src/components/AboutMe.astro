@@ -1,0 +1,47 @@
+---
+import LinkButton from "./LinkButton.astro"
+---
+
+<article class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row">
+<div
+    class="[&>p]:mb-4 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
+>
+    <p>
+    Me llamo Nahuel Paniagua, mis amigos me llaman Pani. Empecé en la
+    programación hace 4 años en una tecnicatura universitaria. Actualmente estoy    
+    <span class="spanblue font-bold">en busca de empleo</span> deseando adquirir nuevos conocimientos.
+    </p>
+
+    <p>
+    A nivel académico y profesional,<span style="color: lime"> me desenvuelvo de manera ágil</span>.
+    Me considero apto y flexible, demostrándome capaz para aprender dinámicamente.
+    </p>
+
+    <p>
+    Como desarrollador, cuento con las <span style="color: lime">herramientas necesarias para realizar</span>. 
+    <span class="spanblue font-bold">trabajos de Software</span>.
+    Mi objetivo es mejorar mis habilidades en el ámbito tecnológico.
+    </p>
+</div>
+
+<img width="200" height="200" src="/me.avif" class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20 " style="object-position: 50% 50%">
+
+</article>
+<div class="flex justify-center w-full mt-8">
+<LinkButton 
+href="https://drive.google.com/file/d/15fxNwT88aVCJAEbXmrz1DGLjZjukHqDr/view?usp=sharing"
+>
+    Curriculum
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+        <path d="M644.7 669.2a7.92 7.92 0 0 0-6.5-3.3H594c-6.5 0-10.3 7.4-6.5 12.7l73.8 102.1c3.2 4.4 9.7 4.4 12.9 0l114.2-158c3.8-5.3 0-12.7-6.5-12.7h-44.3c-2.6 0-5 1.2-6.5 3.3l-63.5 87.8-22.9-31.9zM688 306v-48c0-4.4-3.6-8-8-8H296c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h384c4.4 0 8-3.6 8-8zm-392 88c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h184c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H296zm184 458H208V148h560v296c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V108c0-17.7-14.3-32-32-32H168c-17.7 0-32 14.3-32 32v784c0 17.7 14.3 32 32 32h312c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm402.6-320.8l-192-66.7c-.9-.3-1.7-.4-2.6-.4s-1.8.1-2.6.4l-192 66.7a7.96 7.96 0 0 0-5.4 7.5v251.1c0 2.5 1.1 4.8 3.1 6.3l192 150.2c1.4 1.1 3.2 1.7 4.9 1.7s3.5-.6 4.9-1.7l192-150.2c1.9-1.5 3.1-3.8 3.1-6.3V538.7c0-3.4-2.2-6.4-5.4-7.5zM826 763.7L688 871.6 550 763.7V577l138-48 138 48v186.7z"></path>
+    </svg>
+</LinkButton>
+
+</div>
+<style>
+
+    .spanblue {
+        color: rgb(30, 75, 201);
+    }
+</style>
+

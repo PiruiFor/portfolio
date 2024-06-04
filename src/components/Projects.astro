@@ -1,0 +1,125 @@
+---
+import GitHub from "./icons/GitHub.astro"
+import Link from "./icons/Link.astro"
+import LinkButton from "./LinkButton.astro"
+
+
+const TAGS = {
+  NEXT: {
+    name: "Next.js",
+    class: "bg-[#003159] text-white",
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+  },
+  REACT: {
+    name: "React.js",
+    class: "bg-[#003159] text-white",
+  },
+  MONGO: {
+    name: "MongoDB",
+    class: "bg-[#003159] text-white",
+  },
+  EXPRESS: {
+    name: "Express.js",
+    class: "bg-[#003159] text-white",
+  },
+  NODE: {
+    name: "Node.js",
+    class: "bg-[#003159] text-white",
+  },
+  VITE: {
+    name: "Vite.js",
+    class: "bg-[#003159] text-white",
+  }
+}
+const PROJECTS = [
+  {
+    title: "POLOSEG - Agencia de Seguridad e Higiene",
+    description:
+      "Creado desde 0 con stack MERN, este software permite cumplir con las normativas legales y mejorar la seguridad y la salud de los trabajadores. Los objetivos específicos se centran en proporcionar herramientas para la gestión de riesgos, incidentes, inspecciones, capacitación, comunicación, cumplimiento normativo y generación de informes.",
+    github: "https://github.com/HigieneySeguridad",
+    link: "",
+    image: "/projects/HigieneySeguridad.webp",
+    tags: [TAGS.REACT, TAGS.NODE, TAGS.EXPRESS, TAGS.MONGO],
+  },
+  {
+    title: "Pokedex - Proyecto con React",
+    description:
+      "Proyecto de Pokedex realizado desde 0, permite la búsqueda de pokemons por su tipo, agrupación de los mismos, incluye cuadro de búsqueda para encontrar tu pokemon favorito en poco tiempo!",
+    link: "https://pokedexnp2024.netlify.app/",
+    github: "https://github.com/HigieneySeguridad",
+    image: "/projects/pokedex.webp",
+    tags: [TAGS.REACT, TAGS.VITE],
+  },
+]
+---
+
+<div class="flex flex-col gap-y-16">
+  {
+    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+  <div class="w-full md:w-1/2">
+    <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+    </div>
+  </div>
+
+  <div class="w-full md:w-1/2 md:max-w-lg">
+    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+      {title}
+    </h3>
+    <div class="flex flex-wrap mt-2">
+      <ul class="flex flex-row mb-2 gap-x-2">
+          {tags.map((tag) => (
+            <li>
+              <span
+                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+              >
+                {tag.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+
+      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+      <footer class="flex items-end justify-start mt-4 gap-x-4">
+          {github && (
+            <LinkButton href={github}>
+              <GitHub class="size-6" />
+              Code
+              
+            </LinkButton>
+          )}
+          {link && (
+            <LinkButton href={link}>
+              <Link class="size-4" />
+              Preview
+            </LinkButton>
+          )}
+        </footer>
+    </div>
+  </div>
+</article>
+    ))
+  }
+</div>
+<div class="flex justify-center w-full mt-8">
+  <LinkButton 
+  href="http://localhost:4321/proyectos"
+  >
+      Más Proyectos
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M20 12l-10 0" />
+        <path d="M20 12l-4 4" />
+        <path d="M20 12l-4 -4" />
+        <path d="M4 4l0 16" />
+      </svg>
+  </LinkButton>
+  
+  </div>
+
+
+

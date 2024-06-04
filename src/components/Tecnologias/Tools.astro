@@ -1,0 +1,43 @@
+---
+import GitHub from "../icons/GitHub.astro"
+import Git from "../icons/Git.astro"
+import Npm from "../icons/NPM.astro"
+import VsCode from "../icons/Vscode.astro"
+import Postman from "../icons/Postman.astro"
+---
+
+
+
+<article class="relative rounded-2xl p-6 dark:border  dark:border-dark-900 bg-gradient-to-r dark:from-dark-950 dark:to-black shadow-2xl overflow-hidden false"
+style="border:1px solid; border-color: rgb(11, 112, 11);"
+>
+
+    <h3 class="text-center mb-8 text-xl font-bold  lg:text-4xl lg:break-words bg-gradient-to-t from-[#33b819] to-[#2c2e33] dark:from-[#2c2e33] dark:to-[#33b819] bg-clip-text text-transparent">
+        Herramientas
+    </h3>
+
+        <ul class="grid grid-cols-3 gap-4 ">
+            <li class="rounded-2xl  group flex flex-col  justify-center items-center">
+                <GitHub/>
+                <span class=" text-sm w-full text-center">GitHub</span>
+            </li>
+            <li class="rounded-2xl  group flex flex-col  justify-center items-center">
+                <Git/>
+                <span class=" text-sm w-full text-center">Git</span>
+            </li>
+            <li class="rounded-2xl  group flex flex-col  justify-center items-center">
+                <Npm/>
+                <span class=" text-sm w-full text-center">Npm</span>
+            </li>
+            <li class="rounded-2xl  group flex flex-col  justify-center items-center">
+                <VsCode/>
+                <span class=" text-sm w-full text-center">VSCode</span>
+            </li>
+            <li class="rounded-2xl  group flex flex-col  justify-center items-center">
+                <Postman/>
+                <span class=" text-sm w-full text-center">Postman API</span>
+            </li>
+
+        </ul>
+
+</article>
